@@ -1,0 +1,58 @@
+
+.ui-swipper-container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.ui-swipper-img-container {
+    position: absolute;
+    z-index: 1;
+}
+.ui-swipper-container .ui-swipper-img-container img {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+.ui-swipper-container .ui-swipper-button-container {
+    position: absolute;
+    min-width: 100px;
+    height: 20px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+.ui-swipper-container .ui-swipper-button-container span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid skyblue;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.ui-swipper-container .ui-swipper-button-container .ui-swipper-button-select {
+    background-color: skyblue;
+}
+.ui-swipper-container .ui-swipper-prev, .ui-swipper-container .ui-swipper-next {
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    color: silver;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 3px;
+    top: calc(50% - 10px);
+    cursor: pointer;
+}
+.ui-swipper-container .ui-swipper-prev {
+    position: absolute;
+    left: 10px;
+}
+.ui-swipper-container .ui-swipper-next {
+    position: absolute;
+    right: 10px;
+}
